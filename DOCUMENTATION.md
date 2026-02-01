@@ -445,7 +445,7 @@ your-project/
 
 ## Support
 
-- **Documentation:** [blueprint-ai.design/docs](https://blueprint-ai.design/docs)
+- **Documentation:** [github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md](https://github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md)
 - **GitHub Issues:** [github.com/arsalanshaikhh/Blueprint-AI/issues](https://github.com/arsalanshaikhh/Blueprint-AI/issues)
 - **Email:** support@blueprint-ai.design
 

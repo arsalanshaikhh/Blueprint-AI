@@ -3,7 +3,7 @@
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/buildermethods/design-os.git my-project-design
+git clone https://github.com/arsalanshaikhh/Blueprint-AI.git my-project-design
 cd my-project-design
 ```
 

@@ -85,7 +85,7 @@ npm run dev
 
 ## 📖 Documentation
 
-Full documentation available at [blueprint-ai.design/docs](https://blueprint-ai.design/docs)
+Full documentation available at [github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md](https://github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md)
 
 ---
 

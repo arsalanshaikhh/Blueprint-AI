@@ -198,7 +198,7 @@ Please generate a complete product roadmap with improved, professional descripti
             </Button>
           </div>
 
-          <div className="bg-lime-50 dark:bg-lime-900/20 rounded-md p-4 border border-lime-200 dark:border-lime-800">
+          <div className="bg-gradient-to-r from-[#FD2D00]/10 to-[#DF007C]/10 dark:from-[#FD2D00]/20 dark:to-[#DF007C]/20 rounded-md p-4 border border-[#FD2D00]/30 dark:border-[#DF007C]/30">
             <p className="text-sm text-stone-700 dark:text-stone-300 mb-2">
               <strong>Next steps:</strong>
             </p>
@@ -311,7 +311,7 @@ Please generate a complete product roadmap with improved, professional descripti
                 value={section.title}
                 onChange={(e) => updateSection(index, 'title', e.target.value)}
                 placeholder="Section title (e.g., Dashboard, Invoices, Settings)..."
-                className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+                className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
               />
 
               <textarea
@@ -319,7 +319,7 @@ Please generate a complete product roadmap with improved, professional descripti
                 onChange={(e) => updateSection(index, 'description', e.target.value)}
                 placeholder="One sentence description of this section..."
                 rows={2}
-                className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600 resize-none"
+                className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50 resize-none"
               />
             </div>
           ))}
@@ -327,17 +327,17 @@ Please generate a complete product roadmap with improved, professional descripti
 
         {/* AI Options */}
         {aiService.isConfigured() && (
-          <div className="space-y-4 p-4 border border-lime-200 dark:border-lime-800 rounded-md bg-lime-50 dark:bg-lime-900/20">
+          <div className="space-y-4 p-4 border border-[#FD2D00]/30 dark:border-[#DF007C]/30 rounded-md bg-gradient-to-r from-[#FD2D00]/10 to-[#DF007C]/10 dark:from-[#FD2D00]/20 dark:to-[#DF007C]/20">
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
                 id="useAI"
                 checked={useAI}
                 onChange={(e) => setUseAI(e.target.checked)}
-                className="w-4 h-4 rounded border-stone-300 dark:border-stone-600"
+                className="w-4 h-4 rounded border-stone-300 dark:border-stone-600 accent-[#FD2D00]"
               />
               <Label htmlFor="useAI" className="text-stone-700 dark:text-stone-300 flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-lime-600 dark:text-lime-400" />
+                <Sparkles className="w-4 h-4 text-[#FD2D00] dark:text-[#FF6B35]" />
                 Use AI to enhance descriptions
               </Label>
             </div>

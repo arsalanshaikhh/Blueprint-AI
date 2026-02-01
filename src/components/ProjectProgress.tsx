@@ -18,12 +18,12 @@ function ProgressStep({ label, isComplete, isOptional = false }: ProgressStepPro
       <div
         className={`w-5 h-5 rounded-full flex items-center justify-center ${
           isComplete
-            ? 'bg-lime-100 dark:bg-lime-900/30'
+            ? 'bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20'
             : 'bg-stone-100 dark:bg-stone-800'
         }`}
       >
         {isComplete ? (
-          <Check className="w-3 h-3 text-lime-600 dark:text-lime-400" strokeWidth={2.5} />
+          <Check className="w-3 h-3 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={2.5} />
         ) : (
           <Circle className="w-3 h-3 text-stone-400 dark:text-stone-600" strokeWidth={2} />
         )}
@@ -87,7 +87,7 @@ export function ProjectProgress() {
         </div>
         <div className="h-2 bg-stone-100 dark:bg-stone-800 rounded-full overflow-hidden">
           <div
-            className="h-full bg-lime-500 dark:bg-lime-600 transition-all duration-300"
+            className="h-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] transition-all duration-300"
             style={{ width: `${progressPercentage}%` }}
           />
         </div>
@@ -116,11 +116,11 @@ export function ProjectProgress() {
 
       {/* Status message */}
       {readyForExport && (
-        <div className="mt-4 p-3 bg-lime-50 dark:bg-lime-900/20 border border-lime-200 dark:border-lime-800 rounded-lg">
-          <p className="text-sm text-lime-900 dark:text-lime-100 font-medium">
+        <div className="mt-4 p-3 bg-gradient-to-r from-[#fd2d00]/5 to-[#df007c]/5 dark:from-[#fd2d00]/10 dark:to-[#df007c]/10 border border-[#fd2d00]/20 dark:border-[#fd2d00]/30 rounded-lg">
+          <p className="text-sm text-[#fd2d00] dark:text-[#ff6b4a] font-medium">
             ✓ Ready to export!
           </p>
-          <p className="text-xs text-lime-700 dark:text-lime-300 mt-1">
+          <p className="text-xs text-[#fd2d00]/70 dark:text-[#ff6b4a]/70 mt-1">
             Visit the Export page to generate your handoff package.
           </p>
         </div>

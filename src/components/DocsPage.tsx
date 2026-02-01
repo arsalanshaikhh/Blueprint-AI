@@ -209,9 +209,9 @@ export function DocsPage() {
                 </div>
               </div>
               <Button variant="outline" asChild>
-                <a 
-                  href="https://github.com/zainulabedeen123/UnSlop.Design-" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/arsalanshaikhh/Blueprint-AI"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   View on GitHub
@@ -236,7 +236,7 @@ export function DocsPage() {
                         onClick={() => setActiveSection(section.id)}
                         className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-left transition-colors ${
                           activeSection === section.id
-                            ? 'bg-lime-100 dark:bg-lime-900/30 text-lime-700 dark:text-lime-400'
+                            ? 'bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 text-[#fd2d00] dark:text-[#ff6b4a]'
                             : 'text-stone-600 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800'
                         }`}
                       >
@@ -255,8 +255,8 @@ export function DocsPage() {
             <Card className="border-stone-200 dark:border-stone-700">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-lg bg-lime-100 dark:bg-lime-900/30 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-[#fd2d00] dark:text-[#ff6b4a]" />
                   </div>
                   <h2 className="text-xl font-semibold text-stone-900 dark:text-stone-100">
                     {currentSection.title}

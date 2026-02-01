@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Layers, Sparkles, FolderOpen, Zap, FileText, Boxes, Layout, Github } from 'lucide-react'
+import { Cpu, Sparkles, FolderOpen, Zap, FileText, Boxes, Layout, Github } from 'lucide-react'
 import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -71,8 +71,8 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
       <header className="border-b border-stone-200 dark:border-stone-800 bg-card/80 backdrop-blur-sm sticky top-0 z-20">
         <div className="px-4 sm:px-6 py-3 max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-lime-400 to-lime-600 dark:from-lime-500 dark:to-lime-700 flex items-center justify-center">
-              <Layers className="w-5 h-5 text-white" strokeWidth={2} />
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-[#fd2d00] to-[#df007c] flex items-center justify-center">
+              <Cpu className="w-5 h-5 text-white" strokeWidth={2} />
             </div>
             <span className="text-lg font-semibold text-stone-900 dark:text-stone-100">Blueprint AI</span>
           </div>
@@ -117,7 +117,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
       {/* Hero Section */}
       <section className="px-6 py-20 max-w-4xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-100 dark:bg-lime-900/30 text-lime-700 dark:text-lime-400 text-sm font-medium mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 text-[#fd2d00] dark:text-[#ff6b4a] text-sm font-medium mb-6">
           <Sparkles className="w-4 h-4" />
           AI-Powered Product Planning
         </div>
@@ -130,9 +130,6 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           Define your product vision, let AI generate data models and design systems, then export production-ready components. All in one place.
         </p>
 
-        <p className="text-base font-semibold text-lime-600 dark:text-lime-400 mb-8">
-          100% FREE and Open Source
-        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button onClick={handleGetStartedClick} size="lg" className="text-base">
@@ -140,12 +137,12 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
             Get Started
           </Button>
           <Button variant="outline" size="lg" className="text-base" asChild>
-            <a href="https://blueprint-ai.design/docs" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md" target="_blank" rel="noopener noreferrer">
               View Documentation
             </a>
           </Button>
           <Button variant="outline" size="lg" className="text-base" asChild>
-            <a href="https://github.com/zainulabedeen123/UnSlop.Design-" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/arsalanshaikhh/Blueprint-AI" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               GitHub
             </a>
@@ -162,8 +159,8 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="border-stone-200 dark:border-stone-700">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-lg bg-lime-100 dark:bg-lime-900/30 flex items-center justify-center mb-4">
-                <Sparkles className="w-6 h-6 text-lime-600 dark:text-lime-400" />
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center mb-4">
+                <Sparkles className="w-6 h-6 text-[#fd2d00] dark:text-[#ff6b4a]" />
               </div>
               <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">
                 AI Generation
@@ -226,7 +223,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
         <div className="space-y-8">
           <div className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime-600 dark:bg-lime-500 text-white flex items-center justify-center font-semibold">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] text-white flex items-center justify-center font-semibold">
               1
             </div>
             <div>
@@ -240,7 +237,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime-600 dark:bg-lime-500 text-white flex items-center justify-center font-semibold">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] text-white flex items-center justify-center font-semibold">
               2
             </div>
             <div>
@@ -254,7 +251,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime-600 dark:bg-lime-500 text-white flex items-center justify-center font-semibold">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] text-white flex items-center justify-center font-semibold">
               3
             </div>
             <div>
@@ -268,7 +265,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime-600 dark:bg-lime-500 text-white flex items-center justify-center font-semibold">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] text-white flex items-center justify-center font-semibold">
               4
             </div>
             <div>
@@ -285,9 +282,9 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
       {/* CTA Section */}
       <section className="px-6 py-16 max-w-4xl mx-auto text-center">
-        <Card className="border-stone-200 dark:border-stone-700 bg-gradient-to-br from-lime-50 to-lime-100 dark:from-lime-900/20 dark:to-lime-800/20">
+        <Card className="border-stone-200 dark:border-stone-700 bg-gradient-to-br from-[#fd2d00]/5 to-[#df007c]/5 dark:from-[#fd2d00]/10 dark:to-[#df007c]/10">
           <CardContent className="pt-12 pb-12">
-            <Zap className="w-12 h-12 text-lime-600 dark:text-lime-400 mx-auto mb-4" />
+            <Zap className="w-12 h-12 text-[#fd2d00] dark:text-[#ff6b4a] mx-auto mb-4" />
             <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-4">
               Ready to build better products?
             </h2>
@@ -306,13 +303,13 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
       <footer className="border-t border-stone-200 dark:border-stone-800 py-8">
         <div className="px-6 max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-gradient-to-br from-lime-400 to-lime-600 dark:from-lime-500 dark:to-lime-700 flex items-center justify-center">
-              <Layers className="w-4 h-4 text-white" strokeWidth={2} />
+            <div className="w-6 h-6 rounded bg-gradient-to-r from-[#fd2d00] to-[#df007c] flex items-center justify-center">
+              <Cpu className="w-4 h-4 text-white" strokeWidth={2} />
             </div>
             <span className="text-sm font-medium text-stone-600 dark:text-stone-400">Blueprint AI</span>
           </div>
           <div className="flex items-center gap-6 text-sm text-stone-500 dark:text-stone-400">
-            <a href="https://blueprint-ai.design/docs" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 dark:hover:text-stone-100">
+            <a href="https://github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 dark:hover:text-stone-100">
               Documentation
             </a>
             <a href="https://github.com/arsalanshaikhh/Blueprint-AI" target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 dark:hover:text-stone-100">

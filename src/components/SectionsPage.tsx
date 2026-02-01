@@ -99,8 +99,8 @@ export function SectionsPage() {
                           {/* Status indicator */}
                           <div className="shrink-0 mt-0.5">
                             {isComplete ? (
-                              <div className="w-6 h-6 rounded-full bg-lime-100 dark:bg-lime-900/30 flex items-center justify-center">
-                                <Check className="w-3.5 h-3.5 text-lime-600 dark:text-lime-400" strokeWidth={2.5} />
+                              <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center">
+                                <Check className="w-3.5 h-3.5 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={2.5} />
                               </div>
                             ) : (
                               <div className="w-6 h-6 rounded-full bg-stone-200 dark:bg-stone-700 flex items-center justify-center">
@@ -171,7 +171,7 @@ function ProgressDot({ label, done, optional }: ProgressDotProps) {
           : 'text-stone-400 dark:text-stone-500'
     }`}>
       {done ? (
-        <Check className="w-3 h-3 text-lime-600 dark:text-lime-400" strokeWidth={2.5} />
+        <Check className="w-3 h-3 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={2.5} />
       ) : (
         <Circle className={`w-3 h-3 ${optional ? 'opacity-50' : ''}`} strokeWidth={1.5} />
       )}

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Layers, ArrowLeft, FolderPlus, Github } from 'lucide-react'
+import { Cpu, ArrowLeft, FolderPlus, Github } from 'lucide-react'
 import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
 import { PhaseNav } from './PhaseNav'
 import { ThemeToggle } from './ThemeToggle'
@@ -177,7 +177,7 @@ export function AppLayout({
                   className="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
                 >
                   <a
-                    href="https://github.com/zainulabedeen123/UnSlop.Design-"
+                    href="https://github.com/arsalanshaikhh/Blueprint-AI"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="View on GitHub"
@@ -207,8 +207,8 @@ export function AppLayout({
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-400 transition-colors group"
         >
-          <div className="w-5 h-5 rounded bg-gradient-to-br from-lime-400 to-lime-600 dark:from-lime-500 dark:to-lime-700 flex items-center justify-center transition-all group-hover:scale-110">
-            <Layers className="w-3 h-3 text-white" strokeWidth={2} />
+          <div className="w-5 h-5 rounded bg-gradient-to-r from-[#fd2d00] to-[#df007c] flex items-center justify-center transition-all group-hover:scale-110">
+            <Cpu className="w-3 h-3 text-white" strokeWidth={2} />
           </div>
           <span className="text-xs font-medium">Blueprint AI</span>
         </a>

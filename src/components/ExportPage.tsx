@@ -57,8 +57,8 @@ export function ExportPage() {
               <CardTitle className="text-lg font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-2">
                 {requiredComplete ? (
                   <>
-                    <div className="w-6 h-6 rounded-full bg-lime-100 dark:bg-lime-900/30 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-lime-600 dark:text-lime-400" strokeWidth={2.5} />
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center">
+                      <Check className="w-4 h-4 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={2.5} />
                     </div>
                     Ready to Export
                   </>
@@ -95,8 +95,8 @@ export function ExportPage() {
               <CardTitle className="text-lg font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-2">
                 {exportZipAvailable ? (
                   <>
-                    <div className="w-6 h-6 rounded-full bg-lime-100 dark:bg-lime-900/30 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-lime-600 dark:text-lime-400" strokeWidth={2.5} />
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center">
+                      <Check className="w-4 h-4 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={2.5} />
                     </div>
                     Export Package is Ready
                   </>
@@ -108,9 +108,9 @@ export function ExportPage() {
             <CardContent className="space-y-6">
               {exportZipAvailable && exportZipUrl ? (
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 p-4 bg-lime-50 dark:bg-lime-900/20 rounded-lg border border-lime-200 dark:border-lime-800">
-                    <div className="w-10 h-10 rounded-full bg-lime-100 dark:bg-lime-900/40 flex items-center justify-center shrink-0">
-                      <Package className="w-5 h-5 text-lime-600 dark:text-lime-400" strokeWidth={1.5} />
+                  <div className="flex items-center gap-3 p-4 bg-gradient-to-r from-[#fd2d00]/5 to-[#df007c]/5 dark:from-[#fd2d00]/10 dark:to-[#df007c]/10 rounded-lg border border-[#fd2d00]/20 dark:border-[#fd2d00]/30">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#fd2d00]/10 to-[#df007c]/10 dark:from-[#fd2d00]/20 dark:to-[#df007c]/20 flex items-center justify-center shrink-0">
+                      <Package className="w-5 h-5 text-[#fd2d00] dark:text-[#ff6b4a]" strokeWidth={1.5} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-stone-900 dark:text-stone-100">
@@ -123,7 +123,7 @@ export function ExportPage() {
                     <a
                       href={exportZipUrl}
                       download="product-plan.zip"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-lime-600 hover:bg-lime-700 text-white font-medium text-sm rounded-md transition-colors shrink-0"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#fd2d00] to-[#df007c] hover:from-[#e62900] hover:to-[#c9006d] text-white font-medium text-sm rounded-md transition-all shrink-0"
                     >
                       <Download className="w-4 h-4" strokeWidth={2} />
                       Download

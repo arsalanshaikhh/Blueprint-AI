@@ -264,7 +264,7 @@ Respond with ONLY the JSON object, no explanation.`
           </div>
 
           {/* Next Steps */}
-          <div className="bg-lime-50 dark:bg-lime-900/20 rounded-md p-4 border border-lime-200 dark:border-lime-800">
+          <div className="bg-gradient-to-r from-[#FD2D00]/10 to-[#DF007C]/10 dark:from-[#FD2D00]/20 dark:to-[#DF007C]/20 rounded-md p-4 border border-[#FD2D00]/30 dark:border-[#DF007C]/30">
             <p className="text-sm text-stone-700 dark:text-stone-300 mb-2">
               <strong>Next steps:</strong>
             </p>
@@ -300,7 +300,7 @@ Respond with ONLY the JSON object, no explanation.`
 
         {/* Product Context Info */}
         {productContext && (productContext.hasOverview || productContext.hasRoadmap) && (
-          <div className="bg-lime-50 dark:bg-lime-900/20 rounded-md p-4 border border-lime-200 dark:border-lime-800">
+          <div className="bg-gradient-to-r from-[#FD2D00]/10 to-[#DF007C]/10 dark:from-[#FD2D00]/20 dark:to-[#DF007C]/20 rounded-md p-4 border border-[#FD2D00]/30 dark:border-[#DF007C]/30">
             <p className="text-sm text-stone-700 dark:text-stone-300">
               <strong>AI can suggest design tokens based on your product:</strong>
             </p>
@@ -323,7 +323,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={primaryColor}
               onChange={(e) => setPrimaryColor(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {TAILWIND_COLORS.map(color => (
                 <option key={color} value={color}>{color}</option>
@@ -337,7 +337,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={secondaryColor}
               onChange={(e) => setSecondaryColor(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {TAILWIND_COLORS.map(color => (
                 <option key={color} value={color}>{color}</option>
@@ -351,7 +351,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={neutralColor}
               onChange={(e) => setNeutralColor(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {TAILWIND_COLORS.filter(c => ['slate', 'gray', 'zinc', 'neutral', 'stone'].includes(c)).map(color => (
                 <option key={color} value={color}>{color}</option>
@@ -370,7 +370,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={headingFont}
               onChange={(e) => setHeadingFont(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {GOOGLE_FONTS.filter(f => !f.includes('Mono')).map(font => (
                 <option key={font} value={font}>{font}</option>
@@ -384,7 +384,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={bodyFont}
               onChange={(e) => setBodyFont(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {GOOGLE_FONTS.filter(f => !f.includes('Mono')).map(font => (
                 <option key={font} value={font}>{font}</option>
@@ -398,7 +398,7 @@ Respond with ONLY the JSON object, no explanation.`
             <select
               value={monoFont}
               onChange={(e) => setMonoFont(e.target.value)}
-              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600"
+              className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
             >
               {GOOGLE_FONTS.filter(f => f.includes('Mono')).map(font => (
                 <option key={font} value={font}>{font}</option>
@@ -413,7 +413,7 @@ Respond with ONLY the JSON object, no explanation.`
           <div className="space-y-3 p-4 bg-stone-50 dark:bg-stone-900 rounded-md border border-stone-200 dark:border-stone-700">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-lime-600 dark:text-lime-400" />
+                <Sparkles className="w-4 h-4 text-[#FD2D00] dark:text-[#FF6B35]" />
                 <Label className="text-stone-700 dark:text-stone-300">AI Suggestions</Label>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
@@ -423,7 +423,7 @@ Respond with ONLY the JSON object, no explanation.`
                   onChange={(e) => setUseAI(e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-stone-300 dark:bg-stone-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-lime-500 dark:peer-focus:ring-lime-600 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-stone-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-stone-600 peer-checked:bg-lime-600"></div>
+                <div className="w-11 h-6 bg-stone-300 dark:bg-stone-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[#FD2D00]/50 dark:peer-focus:ring-[#FF6B35]/50 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-stone-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-stone-600 peer-checked:bg-gradient-to-r peer-checked:from-[#FD2D00] peer-checked:to-[#DF007C]"></div>
               </label>
             </div>
 

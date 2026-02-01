@@ -352,7 +352,7 @@ background: linear-gradient(to bottom right, #84cc16, #4d7c0f);
 ## 📞 Support
 
 ### For Users
-- **Documentation:** [blueprint-ai.design/docs](https://blueprint-ai.design/docs)
+- **Documentation:** [github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md](https://github.com/arsalanshaikhh/Blueprint-AI/blob/main/DOCUMENTATION.md)
 - **GitHub:** [github.com/arsalanshaikhh/Blueprint-AI](https://github.com/arsalanshaikhh/Blueprint-AI)
 - **Email:** support@blueprint-ai.design
 

@@ -72,7 +72,7 @@ export function ApiKeyOnboardingDialog({ open, onOpenChange, onComplete }: ApiKe
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+            <Sparkles className="w-5 h-5 text-[#FD2D00] dark:text-[#FF6B35]" />
             Welcome to Design OS!
           </DialogTitle>
           <DialogDescription>
@@ -82,8 +82,8 @@ export function ApiKeyOnboardingDialog({ open, onOpenChange, onComplete }: ApiKe
 
         <div className="space-y-6 py-4">
           {/* Welcome Message */}
-          <div className="p-4 rounded-lg bg-lime-50 dark:bg-lime-900/20 border border-lime-200 dark:border-lime-800">
-            <p className="text-sm text-lime-900 dark:text-lime-100">
+          <div className="p-4 rounded-lg bg-gradient-to-r from-[#FD2D00]/10 to-[#DF007C]/10 dark:from-[#FD2D00]/20 dark:to-[#DF007C]/20 border border-[#FD2D00]/30 dark:border-[#DF007C]/30">
+            <p className="text-sm text-[#FD2D00] dark:text-[#FF6B35]">
               Design OS uses AI to help you create professional product documentation. 
               Add your OpenRouter API key to get started, or skip and add it later in Settings.
             </p>
@@ -110,7 +110,7 @@ export function ApiKeyOnboardingDialog({ open, onOpenChange, onComplete }: ApiKe
                 href="https://openrouter.ai/keys"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-lime-600 dark:text-lime-400 hover:underline flex items-center gap-1"
+                className="text-xs text-[#FD2D00] dark:text-[#FF6B35] hover:underline flex items-center gap-1"
               >
                 Get API Key
                 <ExternalLink className="w-3 h-3" />
@@ -128,7 +128,7 @@ export function ApiKeyOnboardingDialog({ open, onOpenChange, onComplete }: ApiKe
                 }
               }}
               placeholder="sk-or-v1-..."
-              className="w-full px-3 py-2 text-sm border border-stone-200 dark:border-stone-700 rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-400"
+              className="w-full px-3 py-2 text-sm border border-stone-200 dark:border-stone-700 rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50"
               autoFocus
             />
             
@@ -139,9 +139,9 @@ export function ApiKeyOnboardingDialog({ open, onOpenChange, onComplete }: ApiKe
 
           {/* Actions */}
           <div className="flex gap-2">
-            <Button 
-              onClick={handleContinue} 
-              className="flex-1"
+            <Button
+              onClick={handleContinue}
+              className="flex-1 bg-gradient-to-r from-[#FD2D00] to-[#DF007C] hover:from-[#E52900] hover:to-[#C9006E] text-white border-0"
               disabled={isSaving}
             >
               {isSaving ? 'Saving...' : 'Continue'}

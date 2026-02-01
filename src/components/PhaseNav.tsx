@@ -138,7 +138,7 @@ export function PhaseNav() {
 
               {/* Completion indicator - check circle at top-left (shows even when current) */}
               {isComplete && (
-                <span className="absolute -top-1 -left-1 w-4 h-4 rounded-full bg-lime-500 flex items-center justify-center shadow-sm">
+                <span className="absolute -top-1 -left-1 w-4 h-4 rounded-full bg-gradient-to-r from-[#fd2d00] to-[#df007c] flex items-center justify-center shadow-sm">
                   <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>

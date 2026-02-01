@@ -28,7 +28,7 @@ export function AIModelSelector({ value, onChange, disabled }: AIModelSelectorPr
           }
         }}
         disabled={disabled}
-        className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600 disabled:opacity-50"
+        className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50 disabled:opacity-50"
       >
         {POPULAR_MODELS.map(model => (
           <option key={model.id} value={model.id}>
@@ -45,7 +45,7 @@ export function AIModelSelector({ value, onChange, disabled }: AIModelSelectorPr
           onChange={(e) => onChange(e.target.value)}
           placeholder="Enter model ID (e.g., anthropic/claude-3.5-sonnet)"
           disabled={disabled}
-          className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-lime-500 dark:focus:ring-lime-600 disabled:opacity-50"
+          className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-md bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-500 focus:outline-none focus:ring-2 focus:ring-[#FD2D00]/50 dark:focus:ring-[#FF6B35]/50 disabled:opacity-50"
         />
       )}
 
@@ -55,7 +55,7 @@ export function AIModelSelector({ value, onChange, disabled }: AIModelSelectorPr
           href="https://openrouter.ai/models"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lime-600 dark:text-lime-400 hover:underline"
+          className="text-[#FD2D00] dark:text-[#FF6B35] hover:underline"
         >
           openrouter.ai/models
         </a>
